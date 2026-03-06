@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de Zapatos</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<header class="sticky top-0 bg-white border-b z-40">
+<div class="max-w-md mx-auto flex justify-between items-center px-4 py-4">
+<div>
+<p class="text-xs uppercase tracking-widest text-gray-500">Catálogo</p>
+<h1 class="text-xl font-bold">Zapatos</h1>
+</div>
+<a id="whatsappHeader"
+class="border px-3 py-2 rounded-full text-sm"
+target="_blank">WhatsApp</a>
+</div>
+</header>
+
+<section class="max-w-md mx-auto px-4 py-6">
+<div class="bg-gray-900 text-white rounded-2xl p-6">
+<h2 class="text-2xl font-bold">Zapatos para Mujer, Hombre y Niños</h2>
+<p class="text-sm text-gray-300 mt-2">Catálogo optimizado para celular.</p>
+</div>
+</section>
+
+<section class="max-w-md mx-auto px-4 pb-24">
+
+<h3 class="font-semibold mb-2">Categorías</h3>
+
+<div id="filters" class="flex gap-2 mb-5 overflow-x-auto"></div>
+
+<div id="products" class="grid gap-4"></div>
+
+</section>
+
+<a id="whatsappFloat"
+class="fixed bottom-5 right-5 w-14 h-14 flex items-center justify-center bg-green-500 text-white rounded-full shadow-xl"
+target="_blank">
+💬
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
