@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CATÁLOGO</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{
+background:url('images/fondo.jpg') center/cover fixed no-repeat;
+}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:rgba(255,255,255,0.55);
+z-index:-1;
+}
+.product-card{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(6px);
+border:1px solid rgba(255,255,255,0.4);
+}
+.product-image{
+transition:transform .3s ease;
+cursor:pointer;
+}
+.product-image.zoomed{
+transform:scale(1.2);
+}
+.image-frame{overflow:hidden;}
+</style>
+</head>
+
+<body class="text-gray-900">
+
+<header class="sticky top-0 backdrop-blur bg-white/40 border-b">
+<div class="max-w-6xl mx-auto px-4 py-4 text-center">
+<h1 class="text-2xl font-bold tracking-wide">CATÁLOGO</h1>
+</div>
+</header>
+
+<section class="max-w-6xl mx-auto px-4 py-6">
+<div id="filters" class="flex gap-2 justify-center flex-wrap mb-6"></div>
+<div id="products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+</section>
+
+<a id="whatsappFloat"
+class="fixed bottom-5 right-5 w-14 h-14 flex items-center justify-center bg-green-500 text-white rounded-full shadow-xl"
+target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-7 h-7">
+<path d="M19.11 17.23c-.27-.13-1.58-.78-1.82-.87-.24-.09-.42-.13-.6.13-.18.27-.69.87-.85 1.05-.16.18-.31.2-.58.07-.27-.13-1.12-.41-2.13-1.31-.79-.7-1.32-1.57-1.47-1.84-.16-.27-.02-.41.11-.54.11-.11.27-.29.4-.43.13-.15.18-.25.27-.42.09-.18.04-.33-.02-.47-.07-.13-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.47h-.51c-.18 0-.47.07-.71.33-.24.27-.93.91-.93 2.22 0 1.31.96 2.58 1.09 2.76.13.18 1.88 2.87 4.55 4.02.64.27 1.13.43 1.52.55.64.2 1.22.17 1.68.1.51-.08 1.58-.64 1.8-1.25.22-.62.22-1.15.16-1.25-.07-.11-.24-.18-.51-.31Z"/>
+</svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
