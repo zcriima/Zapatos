@@ -4,6 +4,7 @@ const products = [
   { id:1, name:"Zapato Mujer 1", category:"Mujer", sizes:"35 - 36 - 37", price:"$40", image:"images/mujer1.jpg"},
   { id:2, name:"Zapato Mujer 2", category:"Mujer", sizes:"36 - 37 - 38", price:"$42", image:"images/mujer2.jpg"},
   { id:3, name:"Zapato Mujer 3", category:"Mujer", sizes:"37 - 38 - 39", price:"$45", image:"images/mujer3.jpg"},
+  { id:3, name:"Zapato Mujer 4", category:"Mujer", sizes:"37 - 38 - 40", price:"$20", image:"images/mujer3.jpg"},
   { id:4, name:"Zapato Hombre 1", category:"Hombre", sizes:"39 - 40 - 41", price:"$50", image:"images/hombre1.jpg"},
   { id:5, name:"Zapato Hombre 2", category:"Hombre", sizes:"40 - 41 - 42", price:"$55", image:"images/hombre2.jpg"},
   { id:6, name:"Zapato Hombre 3", category:"Hombre", sizes:"41 - 42 - 43", price:"$58", image:"images/hombre3.jpg"},
